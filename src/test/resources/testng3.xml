@@ -1,0 +1,28 @@
+<suite name="Suite">
+    <test name="Run tests from groups smoke and fast">
+        <groups>
+            <classes>
+                <class name="Class1"/>
+                <class name="Class2"/>
+            </classes>
+            <run>
+                <include name="smoke"/>
+                <include name="fast"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Class1"/>
+        </classes>
+    </test>
+    <test name="Run tests from groups fast only, exclude smoke">
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+                <include name="fast"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Class1"/>
+        </classes>
+    </test>
+</suite>

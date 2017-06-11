@@ -1,0 +1,10 @@
+<suite name="Suite">
+    <parameter name="first" value="someValue"/>
+    <parameter name="second" value="someValue42"/>
+    <test name="Run all tests">
+        <classes>
+            <class name="Class1"/>
+            <class name="Class2"/>
+        </classes>
+    </test>
+</suite>
